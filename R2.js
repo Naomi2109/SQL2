@@ -27,6 +27,16 @@ connection.connect(function(error){
 //     }
 // })
 
+let sql = "SELECT * FROM Alumnos WHERE YEAR(Ingreso)=2021"
+connection.query(sql, function(err, result){
+    if (err)
+    console.log(err);
+    else {
+        console.log("Media realizada")
+        console.log(result);
+    }
+})
+
 
 // let sql = "SELECT COUNT(*) FROM Alumnos"
 // connection.query(sql, function(err, result){
