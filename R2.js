@@ -32,7 +32,7 @@ connection.query(sql, function(err, result){
     if (err)
     console.log(err);
     else {
-        console.log("Media realizada")
+        console.log("Alumnos 2021")
         console.log(result);
     }
 })
